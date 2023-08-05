@@ -1,0 +1,105 @@
+path: H:/TibaMe_TeamProject/projects/yolov8/data
+train: H:/TibaMe_TeamProject/projects/yolov8/data/train
+val: H:/TibaMe_TeamProject/projects/yolov8/data/val
+
+
+# 類別數量
+nc: 95
+
+# Classes
+names:
+  0: A01N
+  1: A02W
+  2: A02E
+  3: A03W
+  4: A03E
+  5: A04N
+  6: A04S
+  7: A05S
+  8: A05N
+  9: A06W
+  10: A06E
+  11: A07E
+  12: A07W
+  13: A08S
+  14: A08N
+  15: A09W
+  16: A09E
+  17: A10W
+  18: A10E
+  19: A11E
+  20: A11W
+  21: A12W
+  22: A12E
+  23: A13W
+  24: A13E
+  25: A14W
+  26: A14E
+  27: A15W
+  28: A15E
+  29: A16N
+  30: A17W
+  31: A18W
+  32: A19S
+  33: A20S
+  34: A20N
+  35: A21E
+  36: A21W
+  37: A22N
+  38: B01S
+  39: B01N
+  40: B02S
+  41: B02N
+  42: C01E
+  43: C01W
+  44: C02W
+  45: C03W
+  46: C04N
+  47: C04S
+  48: C05S
+  49: C06E
+  50: C06W
+  51: C07S
+  52: C07N
+  53: C08E
+  54: C08W
+  55: C09W
+  56: C09E
+  57: C10E
+  58: C10W
+  59: C11E
+  60: C11W
+  61: C12E
+  62: C12W
+  63: C13E
+  64: C13W
+  65: C14W
+  66: C14E
+  67: C15S
+  68: C15N
+  69: C16E
+  70: C16W
+  71: C17S
+  72: C18E
+  73: C19S
+  74: D01N
+  75: D01S
+  76: D02E
+  77: D03N
+  78: D03S
+  79: E01S
+  80: E01N
+  81: E02N
+  82: E02S
+  83: E03S
+  84: E03N
+  85: E04N
+  86: E04S
+  87: E05S
+  88: E05N
+  89: E06S
+  90: E06N
+  91: E07S
+  92: E07N
+  93: E08S
+  94: E08N
