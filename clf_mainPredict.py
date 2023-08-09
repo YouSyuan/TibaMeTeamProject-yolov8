@@ -34,6 +34,8 @@ def predict(img, model_path, cut=False, fil=False):
     
 
     
+
+    
 if __name__ == "__main__":
     import glob
     from PIL import Image
