@@ -12,20 +12,20 @@ from img_tools import *
 
 
 
-def predict(img, weight, conf=0.8, cut=False, fil=False, device="cpu"):
+def predict(img, model, conf=0.8, open=False, cut=False, fil=False, device="cpu"):
     """
     接收一張照片與一個模型權重
-    輸出一個 類別名稱(ex: A01N) / 空值(信心度<conf)  (資料型態: str)
+    輸出一個 類別名稱(ex: A01N) / 無法辨識(信心度<conf)  (資料型態: str)
 
     img: 照片
-    weight: 模型權重路徑(xxx/xxx.pt)
+    weight: 模型權重路徑(xxx/xxx.pt)  ->  model: 已經讀取參數的模型
     conf: 閾值(預設 0.8)
     cut: 裁切到片
     fil: 將裁切好照片填補成正方形
     device: 使用硬體("cpu"(預設) / 0 (顯卡, type:int))
     """
-    model = YOLO(weight)
-    # if cut or fil:
+    # model = YOLO(weight)
+    # if open:
     #     img = Image.open(img)
     if cut:   # 取得路牌的部分
         img = cutting(img, 0.4, 1)
@@ -42,9 +42,4 @@ def predict(img, weight, conf=0.8, cut=False, fil=False, device="cpu"):
         return "無法辨識" 
         
     return top1_name
-    
-    
-
-
-
     
